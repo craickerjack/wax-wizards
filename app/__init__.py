@@ -7,7 +7,7 @@ import os
 def create_app():
     app = Flask(__name__)
 
-    cred_path = os.getenv('FIREBASE_CREDENTIALS', 'firebase-credentials.json')
+    cred_path = os.getenv('FIREBASE_CREDENTIALS', '~/Projects/Personal/WaxWizards/firebase-credentials.json')
     cred = credentials.Certificate(cred_path)
     initialize_app(cred)
 
